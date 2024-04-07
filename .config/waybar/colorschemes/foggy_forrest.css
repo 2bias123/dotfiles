@@ -1,0 +1,16 @@
+@define-color base      #2e3440; /* Dark slate blue, representing the dark trees and overcast sky */
+@define-color crust     #3b4252; /* Slightly lighter shade for mid-tone highlights in the trees */
+
+@define-color color0    #4c5c68; /* Dark grey, reflecting the snow in shadowed areas */
+@define-color color1    #434c5e; /* A muted blue for the subdued feel of the forest */
+@define-color color2    #4a5564; /* A grey with a hint of green, for the snow-covered foliage */
+@define-color color3    #565e6c; /* Darker grey, for the paths less traveled by */
+@define-color color4    #3e4755; /* Deep shadow blue, for the depths of the forest */
+@define-color color5    #495158; /* A hint of purple-grey, reflecting the mystery of the woods */
+@define-color color6    #5e676f; /* A cold cyan-grey, like the icy patches on the ground */
+@define-color color7    #727e88; /* Lighter grey for contrast against the darker tones */
+@define-color color8    #2e3740; /* Even darker shade for the deepest shadows */
+@define-color color9    #e5e9f0; /* Bright grey for the snow in areas touched by light */
+
+@import "../style.css";
+

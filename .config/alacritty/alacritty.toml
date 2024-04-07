@@ -1,0 +1,75 @@
+# Alacritty configuration file
+
+# Colors Bright
+[colors.bright]
+black = "#475258"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
+
+# Colors Cursor (Assuming default cursor colors are fine, adjust if needed)
+[colors.cursor]
+text = "#2e3440"  # Adjust if necessary
+cursor = "#d8dee9"  # Adjust if necessary
+
+# Colors Dim (Using normal colors as dim, adjust brightness if needed)
+[colors.dim]
+black = "#475258"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
+
+# Colors Normal
+[colors.normal]
+black = "#475258"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
+
+# Colors Primary
+[colors.primary]
+background = "#2d353b"
+foreground = "#d3c6aa"
+dim_foreground = "#a5abb6"  # You might need to adjust this one as it's not part of the provided scheme
+
+# The following sections are placeholders as your scheme does not specify these.
+# If your application uses these, you may want to adjust or keep them as defaults.
+
+# Colors Search Matches (Leaving default values, adjust if necessary)
+[colors.search.matches]
+background = "#88c0d0"  # Adjust if necessary
+foreground = "CellBackground"  # Adjust if necessary
+
+# Colors Selection (Leaving default values, adjust if necessary)
+[colors.selection]
+background = "#4c566a"  # Adjust if necessary
+text = "CellForeground"  # Adjust if necessary
+
+# Colors Vi Mode Cursor (Leaving default values, adjust if necessary)
+[colors.vi_mode_cursor]
+text = "#2e3440"  # Adjust if necessary
+cursor = "#d8dee9"  # Adjust if necessary
+
+# Font Configuration (Unchanged)
+[font]
+size = 12.0
+[font.normal]
+family = "JetBrains Mono NerdFont"
+
+# Window Padding (Unchanged)
+[window.padding]
+x = 5
+y = 5
+

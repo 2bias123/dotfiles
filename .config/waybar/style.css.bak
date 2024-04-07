@@ -1,0 +1,148 @@
+* {
+  border: none;
+  font-family: CommitMono Nerd Font;
+  font-size: 12px; /* Increased from 7px */
+  min-height: 0;
+}
+
+window#waybar {
+  background: @base;
+  color: @color8;
+}
+
+tooltip {
+  background: @base;
+  border-color: @crust;
+  border-radius: 10px; /* Adjusted from 5px */
+  border-style: solid;
+  border-width: 1px;
+}
+
+#backlight,
+#cpu,
+#custom-swaync,
+#battery,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#clock,
+#window,
+#mpris,
+#workspaces {
+  background: @crust;
+  border-radius: 5px; /* Adjusted from 4px */
+  border: 1px solid @crust;
+  font-weight: 600;
+  margin: 4px 0 4px 0; /* Adjusted from 3px 0 3px 0 */
+  padding: 3px 10px; /* Adjusted from 2px 8px */
+}
+
+#tray {
+  margin-right: 6px; /* Adjusted from 5px */
+  padding-left: 6px; /* Adjusted from 5px */
+  padding-right: 6px; /* Adjusted from 5px */
+}
+
+#workspaces {
+  font-weight: Bold;
+  margin-left: 6px; /* Adjusted from 5px */
+  margin-right: 6px; /* Adjusted from 5px */
+  padding-left: 3px; /* Adjusted from 2px */
+  padding-right: 3px; /* Adjusted from 2px */
+}
+
+#workspaces :nth-child(5) {
+  margin-right: 0px;
+}
+
+#workspaces button {
+  border-radius: 4px; /* Adjusted from 3px */
+  color: @color9;
+  padding: 4px; /* Adjusted from 3px */
+  margin-right: 3px; /* Adjusted from 2.5px */
+}
+
+#workspaces button.active {
+  background: @color2;
+  color: @color8;
+}
+
+#workspaces button.focused {
+  background: @color7;
+  color: @color8;
+}
+
+#workspaces button.urgent {
+  background: @color4;
+  color: @color8;
+}
+
+#workspaces button:hover {
+  background: @crust;
+  color: @color7;
+}
+
+#window {
+  background: transparent;
+  border-radius: 6px; /* Adjusted from 5px */
+  margin-left: 35px; /* Adjusted from 30px */
+  margin-right: 35px; /* Adjusted from 30px */
+}
+
+#cpu,
+#memory {
+  color: @color1;
+}
+
+#cpu {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 0;
+}
+
+#memory {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#mpris {
+  color: @color7;
+  margin-left: 6px; /* Adjusted from 5px */
+}
+
+#clock {
+  border-right: 0px;
+  color: @color6;
+  font-weight: 600;
+  margin-right: 6px; /* Adjusted from 5px */
+}
+
+#custom-swaync {
+  color: @color1;
+  margin-right: 6px; /* Adjusted from 5px */
+  padding-right: 12px; /* Adjusted from 9px */
+}
+
+#network {
+  color: @color3;
+  margin-right: 6px; /* Adjusted from 5px */
+}
+
+#pulseaudio {
+  border-left: 0px;
+  border-right: 0px;
+  color: @color5;
+  margin-right: 6px; /* Adjusted from 5px */
+}
+
+#battery {
+  background: @crust;
+  border-radius: 5px; /* Adjusted from 4px */
+  border: 1px solid @crust;
+  color: @color2;
+  font-weight: 600;
+  padding: 3px 10px; /* Adjusted from 2px 8px */
+  margin-right: 6px; /* Adjusted from 5px */
+}
+

@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+index_file="state_index.txt"
+
+# Getting the connected display port
+connected_port=$(xrandr | grep -w "connected" | awk '{print $1}' | grep "^DP-")
+
+# Define the commands
+commands=("xrandr -s 0" "xrandr --output eDP-1 --auto --output $connected_port --auto --right-of eDP-1")
+
+# Read the current index from the file, or initialize to 1 if file doesn't exist
+if [[ -f $index_file ]]; then
+    current_index=$(<"$index_file")
+else
+    current_index=1
+fi
+
+echo "Current $#commands[@]"
+
+# Increment the current index and reset if it exceeds the number of commands
+current_index=$((current_index % 2))
+
+echo "Current Index After Increment: $current_index"
+
+# Execute the current command
+eval ${commands[current_index-1]}
+
+# Save the updated index to the file
+echo $current_index > "$index_file"

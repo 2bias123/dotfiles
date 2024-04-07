@@ -1,0 +1,16 @@
+@define-color base      #2e3440; /* Alacritty's background color */
+@define-color crust     #3b4252; /* Alacritty's normal black */
+
+@define-color color0    #eceff4; /* Alacritty's bright white */
+@define-color color1    #bf616a; /* Alacritty's normal red */
+@define-color color2    #a3be8c; /* Alacritty's normal green */
+@define-color color3    #ebcb8b; /* Alacritty's normal yellow */
+@define-color color4    #81a1c1; /* Alacritty's normal blue */
+@define-color color5    #b48ead; /* Alacritty's normal magenta */
+@define-color color6    #88c0d0; /* Alacritty's normal cyan */
+@define-color color7    #e5e9f0; /* Alacritty's normal white */
+@define-color color8    #4c566a; /* Alacritty's bright black */
+@define-color color9    #d8dee9; /* Alacritty's cursor color */
+
+@import "../style.css";
+

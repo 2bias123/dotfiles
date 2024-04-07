@@ -1,0 +1,34 @@
+#!/bin/zsh
+# switch between keyboard layouts
+
+# Define the layouts
+layouts=('us' 'no')
+
+# Function to get the current layout
+get_current_layout() {
+    swaymsg -t get_inputs | jq -r '.[] | select(.identifier == "YOUR_KEYBOARD_IDENTIFIER") | .xkb_active_layout_name'
+}
+
+# Function to set a new layout
+set_layout() {
+    swaymsg input "YOUR_KEYBOARD_IDENTIFIER" xkb_layout $1
+}
+
+# If an explicit layout is provided as an argument, use it. Otherwise, toggle between layouts.
+if [[ -n "$1" ]]; then
+    set_layout $1
+else
+    current_layout=$(get_current_layout)
+    case $current_layout in
+        "English (US)")
+            set_layout "no"
+            ;;
+        "Norwegian")
+            set_layout "us"
+            ;;
+        *)
+            set_layout "us"
+            ;;
+    esac
+fi
+

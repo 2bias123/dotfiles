@@ -1,0 +1,25 @@
+@define-color cc-bg                             #2e3440; /* Alacritty's background color */
+@define-color cc-fg                             #e5e9f0; /* Alacritty's normal white */
+
+@define-color text-color                        #e5e9f0; /* Alacritty's normal white */
+@define-color text-color-disabled               #4c566a; /* Alacritty's bright black */
+
+@define-color bg-selected                       #81a1c1; /* Alacritty's normal blue */
+
+@define-color floating-noti-bg                  #2e3440; /* Alacritty's background color */
+@define-color floating-noti-border-color        #81a1c1; /* Alacritty's normal blue */
+@define-color floating-noti-bg-darker           #3b4252; /* Alacritty's normal black */
+@define-color floating-noti-bg-hover            #4c566a; /* Alacritty's bright black */
+@define-color floating-noti-close-bg            #3b4252; /* Alacritty's normal black */
+@define-color floating-noti-close-bg-hover      #4c566a; /* Alacritty's bright black */
+
+@define-color noti-bg                           #4c566a; /* Alacritty's bright black */
+@define-color noti-border-color                 #4c566a; /* Alacritty's bright black */
+@define-color noti-bg-darker                    #3b4252; /* Alacritty's normal black */
+@define-color noti-bg-hover                     #3b4252; /* Alacritty's normal black */
+@define-color noti-close-bg                     #3b4252; /* Alacritty's normal black */
+@define-color noti-close-bg-hover               #4c566a; /* Alacritty's bright black */
+
+@define-color dnd-slider-button                 #e5e9f0; /* Alacritty's normal white */
+@define-color dnd-slider-button-checked         #2e3440; /* Alacritty's background color */
+
