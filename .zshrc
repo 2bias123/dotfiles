@@ -130,3 +130,4 @@ function new-term-same {
 }
 
 # this is for a test
+export EDITOR=nvim
