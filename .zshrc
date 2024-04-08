@@ -37,7 +37,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
-
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -129,3 +128,5 @@ zplug load
 function new-term-same {
 	alacritty --working-directory "$PWD" &
 }
+
+# this is for a test
