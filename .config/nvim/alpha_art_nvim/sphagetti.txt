@@ -1,14 +1,4 @@
-return {
-  "goolord/alpha-nvim",
-  dependencies = {
-    "nvim-tree/nvim-web-devicons",
-  },
-
-  config = function()
-    local alpha = require("alpha")
-    local dashboard = require("alpha.themes.dashboard")
-
-    dashboard.section.header.val = {
+[[▒▒▓▓                                                  ░░      ░░░░  ░░░░      ░░░░]],
 [[                              ██              ██]],
 [[                            ██              ██]],
 [[                          ██        ██    ██]],
@@ -33,13 +23,4 @@ return {
 [[                ██████████████████████████████    ██████        ██]],
 [[                  ██████████████████████████  ████████]],
 [[                      ██████████████▓▓████████▓▓▓▓]],
-[[                  _  __         _  __             ____   ]],
-[[                 / |/ /__ ___  / |/ /__  ___  ___/ / /__ ]],
-[[                /    / -_) _ \/    / _ \/ _ \/ _  / / -_)]],
-[[               /_/|_/\__/\___/_/|_/\___/\___/\_,_/_/\__/ ]],
-    }
-
-    alpha.setup(dashboard.opts)
-  end,
-}
 
