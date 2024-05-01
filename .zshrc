@@ -123,6 +123,14 @@ source ~/.zplug/init.zsh
 #Put zplug plugins here
 zplug "MichaelAquilina/zsh-you-should-use"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "agkozak/zsh-z"
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+    echo
+fi
 zplug load
 
 function new-term-same {
